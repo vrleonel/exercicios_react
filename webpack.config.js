@@ -1,4 +1,4 @@
-const webpack = require('webpack');
+const webpack = require('webpack')
 
 module.exports = {
   entry: './ex/index.jsx',
@@ -6,19 +6,18 @@ module.exports = {
     path: __dirname + '/public',
     filename: './bundle.js'
   },
-  devServer:{
+  devServer: {
     port: 8080,
-    contentBase: './public',
+    contentBase: './public'
   },
-  modules: {
+  module: {
     loaders: [{
       test: /.jsx?$/,
       loader: 'babel-loader',
-      exclude: /node-modules/,
+      exclude: /node_modules/,
       query: {
         presets: ['es2015', 'react']
       }
     }]
   }
-
 }
