@@ -7,8 +7,11 @@ module.exports = {
     filename: './bundle.js'
   },
   devServer: {
-    port: 8080,
+    port: 5001,
     contentBase: './public'
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
   },
   module: {
     loaders: [{
