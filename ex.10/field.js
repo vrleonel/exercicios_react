@@ -4,8 +4,6 @@ import {bindActionCreators} from 'redux';
 import {changeValue} from './fieldActions';
 
 class Field extends Component {
-
-
   render() {
     return (
       <div>
